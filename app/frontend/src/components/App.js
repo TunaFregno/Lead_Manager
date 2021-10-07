@@ -1,10 +1,18 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
+import Header from "./layout/Header";
+import Dashboard from "./leads/Dashboard";
+
 const App = () => {
     return (
-        <h1>React App</h1>
+        <>
+            <Header />
+            <div className="container">
+                <Dashboard />
+            </div>
+        </>
     )
 }
 
-ReactDOM.render(<App/>, document.getElementById('app'))
+ReactDOM.render(<App />, document.getElementById('app'))
